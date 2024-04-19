@@ -16,6 +16,15 @@ import {
 import ReactModal from "react-modal";
 import emailjs from "@emailjs/browser";
 
+import logo from "../public/assets/NMB.png";
+import menuIcono from "../public/assets/4139555.png";
+import curriculum from "../public/assets/CV Nicolas Mancera 2024.pdf";
+import img3d from "../public/assets/3d-business-young-man-at-work-desk-and-dog.png";
+import foto from "../public/assets/foto Nicolas.jpg";
+import p1 from "../public/assets/p3.png";
+import p2 from "../public/assets/charlie.png";
+import p3 from "../public/assets/dog.jpeg";
+
 ReactModal.setAppElement("#root");
 
 function App() {
@@ -87,14 +96,10 @@ function App() {
     <div className="App">
       <header className="header" id="header">
         <div className="menu container">
-          <img src="../public/assets/NMB.png" className="logo" alt="LOGO" />
+          <img src={logo} className="logo" alt="LOGO" />
           <input type="checkbox" id="menu" />
           <label htmlFor="menu">
-            <img
-              src="../public/4139555.png"
-              className="menu-icono"
-              alt="menu"
-            />
+            <img src={menuIcono} className="menu-icono" alt="menu" />
           </label>
           <nav className="navbar">
             <ul>
@@ -136,7 +141,7 @@ function App() {
               </a>
               <a
                 style={{ marginLeft: "60px" }}
-                href="../public/assets/CV Nicolas Mancera 2024.pdf"
+                href={curriculum}
                 className="btn-1"
                 download="CV Nicolas Mancera"
               >
@@ -152,10 +157,7 @@ function App() {
               alignItems: "center",
             }}
           >
-            <img
-              src="../public/assets/3d-business-young-man-at-work-desk-and-dog.png"
-              alt="Imagen inicio"
-            />
+            <img src={img3d} alt="Imagen inicio" />
           </div>
         </div>
       </header>
@@ -168,11 +170,7 @@ function App() {
 
       <section className="about container">
         <div className="about-img">
-          <img
-            className="about-foto"
-            src="../public/assets/foto Nicolas.jpg"
-            alt=""
-          />
+          <img className="about-foto" src={foto} alt="" />
         </div>
         <div className="about-txt">
           <h2>Sobre Mi</h2>
@@ -234,7 +232,7 @@ function App() {
 
             <img
               className="img-container"
-              src="../public/assets/p3.png"
+              src={p1}
               alt="sefue"
               onClick={openSEFUEModal}
               style={{ cursor: "pointer" }}
@@ -289,7 +287,7 @@ function App() {
           <div className="proyectos-1">
             <h3>Charlie</h3>
             <img
-              src="../public/assets/charlie.png"
+              src={p2}
               alt="charlie"
               onClick={openCharlieModal}
               style={{ cursor: "pointer" }}
@@ -368,7 +366,7 @@ function App() {
           <div className="proyectos-1">
             <h3>Dogs PI</h3>
             <img
-              src="../public/assets/dog.jpeg"
+              src={p3}
               alt="dogspi"
               onClick={openDogsPIModal}
               style={{ cursor: "pointer" }}
