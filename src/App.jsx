@@ -87,11 +87,11 @@ function App() {
     <div className="App">
       <header className="header" id="header">
         <div className="menu container">
-          <img src="./src/assets/NMB.png" className="logo" alt="LOGO" />
+          <img src="../public/NMB.png" className="logo" alt="LOGO" />
           <input type="checkbox" id="menu" />
           <label htmlFor="menu">
             <img
-              src="./src/assets/4139555.png"
+              src="../public/4139555.png"
               className="menu-icono"
               alt="menu"
             />
@@ -136,7 +136,7 @@ function App() {
               </a>
               <a
                 style={{ marginLeft: "60px" }}
-                href="./src/assets/CV Nicolas Mancera 2024.pdf"
+                href="../public/CV Nicolas Mancera 2024.pdf"
                 className="btn-1"
                 download="CV Nicolas Mancera"
               >
@@ -153,7 +153,7 @@ function App() {
             }}
           >
             <img
-              src="./src/assets/3d-business-young-man-at-work-desk-and-dog.png"
+              src="../public/3d-business-young-man-at-work-desk-and-dog.png"
               alt="Imagen inicio"
             />
           </div>
@@ -168,11 +168,7 @@ function App() {
 
       <section className="about container">
         <div className="about-img">
-          <img
-            className="about-foto"
-            src="./src/assets/foto Nicolas.jpg"
-            alt=""
-          />
+          <img className="about-foto" src="../public/foto Nicolas.jpg" alt="" />
         </div>
         <div className="about-txt">
           <h2>Sobre Mi</h2>
@@ -234,7 +230,7 @@ function App() {
 
             <img
               className="img-container"
-              src="./src/assets/p3.png"
+              src="../public/p3.png"
               alt="sefue"
               onClick={openSEFUEModal}
               style={{ cursor: "pointer" }}
@@ -289,7 +285,7 @@ function App() {
           <div className="proyectos-1">
             <h3>Charlie</h3>
             <img
-              src="./src/assets/charlie.png"
+              src="../public/charlie.png"
               alt="charlie"
               onClick={openCharlieModal}
               style={{ cursor: "pointer" }}
@@ -368,7 +364,7 @@ function App() {
           <div className="proyectos-1">
             <h3>Dogs PI</h3>
             <img
-              src="./src/assets/dog.jpeg"
+              src="../public/dog.jpeg"
               alt="dogspi"
               onClick={openDogsPIModal}
               style={{ cursor: "pointer" }}
@@ -497,7 +493,7 @@ function App() {
 
       <footer className="footer">
         <div className="footer-content container">
-          <img src="images/NMB.png" className="logofooter" alt="LOGO" />
+          <img src="../public/NMB.png" className="logofooter" alt="LOGO" />
 
           <div className="link">
             <ul>
