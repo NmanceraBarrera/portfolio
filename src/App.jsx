@@ -495,11 +495,7 @@ function App() {
 
       <footer className="footer">
         <div className="footer-content container">
-          <img
-            src="../public/assets/NMB.png"
-            className="logofooter"
-            alt="LOGO"
-          />
+          <img src={logo} className="logofooter" alt="LOGO" />
 
           <div className="link">
             <ul>
