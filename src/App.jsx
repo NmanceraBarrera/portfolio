@@ -2,7 +2,10 @@ import React, { useRef, useState } from "react";
 import Swal from "sweetalert2";
 import "../src/App.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import { faArrowUp } from "@fortawesome/free-solid-svg-icons";
 import {
+  faBarsStaggered,
   faBookBookmark,
   faChalkboard,
   faEnvelope,
@@ -130,14 +133,14 @@ function App() {
                 className="redes"
                 target="_blank"
               >
-                <i className="redes fa-brands fa-github"></i>
+                <FontAwesomeIcon icon={faGithub} />
               </a>
               <a
                 href="https://www.linkedin.com/in/nicolas-mancera-barrera-706764295/"
                 className="redes"
                 target="_blank"
               >
-                <i className="redes fa-brands fa-linkedin"></i>
+                <FontAwesomeIcon icon={faLinkedin} />
               </a>
               <a
                 style={{ marginLeft: "60px" }}
@@ -164,7 +167,7 @@ function App() {
 
       <div className="btn-arriba">
         <a href="#header">
-          <i className="fa-solid fa-arrow-up"></i>
+          <FontAwesomeIcon icon={faArrowUp} style={{ color: "#928554" }} />
         </a>
       </div>
 
@@ -189,7 +192,7 @@ function App() {
 
       <div className="btn-arriba">
         <a href="#header">
-          <i className="fa-solid fa-arrow-up"></i>
+          <FontAwesomeIcon icon={faArrowUp} style={{ color: "#928554" }} />
         </a>
       </div>
 
@@ -220,7 +223,7 @@ function App() {
       <section className="proyectos" id="proyectos">
         <div className="btn-arriba">
           <a href="#header">
-            <i className="fa-solid fa-arrow-up"></i>
+            <FontAwesomeIcon icon={faArrowUp} style={{ color: "#928554" }} />
           </a>
         </div>
         <h2>Proyectos</h2>
@@ -513,7 +516,10 @@ function App() {
               </li>
               <li>
                 <a href="#header">
-                  <i className="fa-solid fa-arrow-up"></i>
+                  <FontAwesomeIcon
+                    icon={faArrowUp}
+                    style={{ color: "#928554" }}
+                  />
                 </a>
               </li>
             </ul>

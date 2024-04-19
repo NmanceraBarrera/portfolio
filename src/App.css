@@ -21,7 +21,7 @@ img {
 }
 .header {
   background-color: #fafafa;
-  padding: 150px 0 100px 0;
+  padding: 200px 0 50px 0;
   min-height: flex;
   display: flex;
   align-items: center;
@@ -88,6 +88,7 @@ img {
 
 .header-content {
   display: flex;
+  justify-content: center;
 }
 
 .data-content {
@@ -98,7 +99,7 @@ img {
   align-items: center;
 }
 
-.redes a {
+.redes .a {
   margin: none;
   padding: 0;
   color: #928554;
@@ -332,16 +333,16 @@ img {
 
 .custom-modal-class {
   position: fixed;
-  top: 50%; /* Centra el modal verticalmente */
-  left: 50%; /* Centra el modal horizontalmente */
-  transform: translate(-50%, -50%); /* Ajusta el centro del modal */
-  padding: 20px; /* Espacio interno del modal */
-  background-color: white; /* Color de fondo del modal */
-  border-radius: 8px; /* Bordes redondeados */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Sombra para el modal */
-  z-index: 1001; /* Asegura que el modal esté encima del overlay */
-  max-width: 500px; /* Ancho máximo del modal */
-  width: 90%; /* Ajusta el ancho del modal en función de la pantalla */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  z-index: 1001;
+  max-width: 500px;
+  width: 90%;
 }
 
 .modal-content {
@@ -371,23 +372,21 @@ img {
 }
 
 .img-container {
-  position: relative; /* Necesario para posicionar el indicador */
+  position: relative;
 }
 
-/* Estilo para el indicador superpuesto */
 .overlay-indicator {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
+  background-color: rgba(0, 0, 0, 0.5);
   padding: 5px 10px;
   border-radius: 50%;
-  color: white; /* Color de texto o ícono */
-  display: none; /* Inicialmente oculto */
+  color: white;
+  display: none;
 }
 
-/* Mostrar el indicador al pasar el mouse sobre el contenedor de la imagen */
 .img-container:hover .overlay-indicator {
   display: block;
 }
@@ -595,8 +594,9 @@ textarea {
 
   .header-img {
     display: flex;
-    justify-content: center;
-    width: 80%;
+    justify-content: flex-end;
+    /* align-items: center; */
+    width: 100%;
   }
 
   .header img {
