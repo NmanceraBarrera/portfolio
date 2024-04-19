@@ -87,7 +87,7 @@ function App() {
     <div className="App">
       <header className="header" id="header">
         <div className="menu container">
-          <img src="../public/NMB.png" className="logo" alt="LOGO" />
+          <img src="../public/assets/NMB.png" className="logo" alt="LOGO" />
           <input type="checkbox" id="menu" />
           <label htmlFor="menu">
             <img
@@ -136,7 +136,7 @@ function App() {
               </a>
               <a
                 style={{ marginLeft: "60px" }}
-                href="../public/CV Nicolas Mancera 2024.pdf"
+                href="../public/assets/CV Nicolas Mancera 2024.pdf"
                 className="btn-1"
                 download="CV Nicolas Mancera"
               >
@@ -153,7 +153,7 @@ function App() {
             }}
           >
             <img
-              src="../public/3d-business-young-man-at-work-desk-and-dog.png"
+              src="../public/assets/3d-business-young-man-at-work-desk-and-dog.png"
               alt="Imagen inicio"
             />
           </div>
@@ -168,7 +168,11 @@ function App() {
 
       <section className="about container">
         <div className="about-img">
-          <img className="about-foto" src="../public/foto Nicolas.jpg" alt="" />
+          <img
+            className="about-foto"
+            src="../public/assets/foto Nicolas.jpg"
+            alt=""
+          />
         </div>
         <div className="about-txt">
           <h2>Sobre Mi</h2>
@@ -230,7 +234,7 @@ function App() {
 
             <img
               className="img-container"
-              src="../public/p3.png"
+              src="../public/assets/p3.png"
               alt="sefue"
               onClick={openSEFUEModal}
               style={{ cursor: "pointer" }}
@@ -285,7 +289,7 @@ function App() {
           <div className="proyectos-1">
             <h3>Charlie</h3>
             <img
-              src="../public/charlie.png"
+              src="../public/assets/charlie.png"
               alt="charlie"
               onClick={openCharlieModal}
               style={{ cursor: "pointer" }}
@@ -364,7 +368,7 @@ function App() {
           <div className="proyectos-1">
             <h3>Dogs PI</h3>
             <img
-              src="../public/dog.jpeg"
+              src="../public/assets/dog.jpeg"
               alt="dogspi"
               onClick={openDogsPIModal}
               style={{ cursor: "pointer" }}
@@ -493,7 +497,11 @@ function App() {
 
       <footer className="footer">
         <div className="footer-content container">
-          <img src="../public/NMB.png" className="logofooter" alt="LOGO" />
+          <img
+            src="../public/assets/NMB.png"
+            className="logofooter"
+            alt="LOGO"
+          />
 
           <div className="link">
             <ul>
