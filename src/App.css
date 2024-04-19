@@ -344,6 +344,18 @@ img {
   width: 90%; /* Ajusta el ancho del modal en función de la pantalla */
 }
 
+.modal-content {
+  padding: 10px;
+  height: 80dvh;
+  width: 70dvw;
+  overflow-y: auto;
+  scrollbar-width: none;
+}
+
+.modal-content::-webkit-scrollbar {
+  display: none;
+}
+
 .modal-buttons {
   display: flex;
   justify-content: center;
