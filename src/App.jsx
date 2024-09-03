@@ -1,16 +1,14 @@
-import React, { useRef, useState } from "react";
+import { useRef, useState } from "react";
 import Swal from "sweetalert2";
 import "../src/App.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { faArrowUp } from "@fortawesome/free-solid-svg-icons";
 import {
-  faBarsStaggered,
   faBookBookmark,
   faChalkboard,
   faEnvelope,
   faGraduationCap,
-  faInfo,
   faInfoCircle,
   faPhone,
   faUser,
@@ -58,12 +56,6 @@ function App() {
     e.preventDefault();
 
     // Configura el template params
-    const templateParams = {
-      name: name,
-      phone: phone,
-      email: email,
-      message: message,
-    };
 
     emailjs
       .sendForm("service_zg018h7", "template_17q6njq", form.current, {
@@ -132,6 +124,7 @@ function App() {
                 href="https://github.com/NmanceraBarrera"
                 className="redes"
                 target="_blank"
+                rel="noreferrer"
               >
                 <FontAwesomeIcon icon={faGithub} />
               </a>
@@ -139,6 +132,7 @@ function App() {
                 href="https://www.linkedin.com/in/nicolas-mancera-barrera-706764295/"
                 className="redes"
                 target="_blank"
+                rel="noreferrer"
               >
                 <FontAwesomeIcon icon={faLinkedin} />
               </a>
@@ -179,13 +173,13 @@ function App() {
           <h2>Sobre Mi</h2>
           <hr className="linea-division-corta" />
           <p>
-            "Soy un hombre de Fe, colombiano apasionado por el aprendizaje
+            Soy un hombre de Fe, colombiano apasionado por el aprendizaje
             constante, especialmente en tecnología y programación. Me destaco en
             impulsar el crecimiento empresarial mediante la implementación de
             ideas innovadoras. Disfruto explorando nuevas tecnologías y
             aplicándolas en proyectos creativos. Además, encuentro equilibrio en
             mi vida a través de actividades como la lectura, el deporte y el
-            tiempo con mi familia."
+            tiempo con mi familia.
           </p>
         </div>
       </section>

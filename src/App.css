@@ -348,7 +348,7 @@ img {
 .modal-content {
   padding: 10px;
   height: 80dvh;
-  width: 70dvw;
+  max-width: 800px;
   overflow-y: auto;
   scrollbar-width: none;
 }
